@@ -1,0 +1,10 @@
+<h1>Candidates</h1>
+<ul>
+{% for candidate in candidate_list %}
+    <li>{{ candidate.id }}</li>
+    <li>{{ candidate.first_name }} {{ candidate.last_name }}</li>
+    {% for grade in grade_list %}
+    <li>{{ grade.value }}</li>
+    {% endfor %}
+{% endfor %}
+</ul>

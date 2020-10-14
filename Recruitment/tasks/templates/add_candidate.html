@@ -1,0 +1,17 @@
+<form method="post">
+    {% csrf_token %}
+    <fieldset class"">
+        <legend class="border-bottom mb-4">Add a Candidate</legend>
+        {{ form.as_p }}
+    <input type="submit" value="Add Candidate">
+    <div>
+        <p></p>
+        <a href='/add-mark'>Add new Mark</a>
+    </div>
+    <div>
+        <a href='/add-mark/add-recruiter'>Add new Recruiter</a>
+    </div>
+    <div>
+        <a href='/add-mark/add-task'>Add new Task</a>
+    </div>
+</form>
