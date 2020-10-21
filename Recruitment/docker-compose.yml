@@ -3,26 +3,20 @@ version: "3.8"
 services:
   web:
     build: .
-    # command: gunicorn Recruitment.wsgi:application --bind 0.0.0.0:8080
-    command: python manage.py runserver 0.0.0.0:8080
+    command: bash -c "sleep 3 && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8080"
     volumes:
       - .:/app
     ports:
       - 8080:8080
-    env_file:
-      - .env
+    environment:
+      - SECRET_KEY=fdg45kjbjkhfvloijhku79)&hvffffffxst>)(jhkiugv789mk
+      - DEBUG=True
+      - ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
     depends_on:
       - db
   db:
     image: postgres
-    volumes:
-      - 'postgres:/var/lib/postgresql/data'
-    env_file: .env
-    environment: 
-      - POSTGRES_PASSWORD=postgrespas
-    # build: .
-    # container_name: dbps
-    # ports:
-    #   - 5432:5432
-volumes:
-  postgres:
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
