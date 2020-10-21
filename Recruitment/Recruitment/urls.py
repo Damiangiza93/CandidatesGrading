@@ -18,14 +18,17 @@ from django.urls import path
 from tasks.views import (
     AddMarkView, GradeAdded, 
     CandidatesListView, AddCandidateView, 
-    AddRecruiterView, AddTaskView 
+    AddRecruiterView, AddTaskView,
+    Home
     )
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
     path('add-mark/', AddMarkView.as_view(), name='add-mark'),
     path('add-mark/add-candidate/', AddCandidateView.as_view(), name='add-candidate'),
     path('add-mark/add-recruiter/', AddRecruiterView.as_view(), name='add-recruiter'),
     path('add-mark/add-task/', AddTaskView.as_view(), name='add-task'),
     path('gradeadded/', GradeAdded, name='gradeadded'),
-    path('', CandidatesListView, name='candidates-list')
+    path('candidates-list/', CandidatesListView, name='candidates-list'),
+    path('', Home, name='home')
+    
 ]

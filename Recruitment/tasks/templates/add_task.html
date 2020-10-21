@@ -1,9 +1,14 @@
-<form method="post">
-    {% csrf_token %}
-    <fieldset class"">
-        <legend class="border-bottom mb-4">Add Task</legend>
-        {{ form.as_p }}
-    <input type="submit" value="Add Task">
+{% extends "base.html" %}
+
+{% block content %}
+    
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Add Task</legend>
+            {{ form.as_p }}
+        <input type="submit" value="Add Task">
+    </form>
     <div>
         <p></p>
         <a href='/add-mark'>Add new Mark</a>
@@ -14,4 +19,5 @@
     <div>
         <a href='/add-mark/add-candidate'>Add new Candidate</a>
     </div>
-</form>
+    
+{% endblock content %}

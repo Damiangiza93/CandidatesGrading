@@ -26,11 +26,5 @@ class AddTaskForm(forms.ModelForm):
         fields = ['title']
     
     
-    
-    # Candidate.first_name = forms.CharField(max_length=30)
-    # Candidate.last_name = forms.CharField(max_length=30)
-    # Recruiter.first_name = forms.CharField(max_length=30)
-    # Recruiter.last_name = forms.CharField(max_length=30)
-    # Task.title = forms.CharField(max_length=150)
-    # Grade.value = forms.IntegerField()
+
     

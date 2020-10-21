@@ -5,6 +5,9 @@ from django.views.generic import FormView
 from .forms import AddMarkForm, AddCandidateForm, AddRecruiterForm, AddTaskForm
 from .models import Candidate, Grade  
 
+def Home(request):
+    return render(request, 'base.html')
+
 class AddMarkView(SuccessMessageMixin, FormView):
     template_name = 'add_mark.html'
     form_class = AddMarkForm
@@ -76,8 +79,5 @@ def CandidatesListView(request):
         ,safe=False, json_dumps_params={'indent': 1})
 
 def GradeAdded(request):
-    # context = {
-    #     'tasks': Task.objects.get()     
-    #     }
     return render(request, 'gradeadded.html')    
 

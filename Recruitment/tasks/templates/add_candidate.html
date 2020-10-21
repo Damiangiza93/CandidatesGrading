@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+
 <form method="post">
     {% csrf_token %}
     <fieldset class"">
@@ -15,3 +19,4 @@
         <a href='/add-mark/add-task'>Add new Task</a>
     </div>
 </form>
+{% endblock content %}
