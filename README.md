@@ -4,12 +4,12 @@ A web API that will allow grading and listing Tasks given by a Recruiter to the 
 
 ## Table of contents
 
-1. [General info/Motivation](https://link_to_file#general-info)
-2. [Used technologies](https://link_to_file#used-technologies)
-3. [Features](https://link_to_file#features)
-4. [Quick Start Guide](https://link_to_file#quick-start-guide)
-5. [Configuration](https://link_to_file#configuration)
-6. [Screenshots](https://link_to_file#screenshots)
+1. [General info/Motivation](https://github.com/Damiangiza93/CandidatesGrading#general-infomotivation)
+2. [Used technologies](https://github.com/Damiangiza93/CandidatesGrading#used-technologies)
+3. [Features](https://github.com/Damiangiza93/CandidatesGrading#features)
+4. [Quick Start Guide](https://github.com/Damiangiza93/CandidatesGrading#quick-start-guide)
+5. [Configuration](https://github.com/Damiangiza93/CandidatesGrading#configuration)
+6. [Screenshots](https://github.com/Damiangiza93/CandidatesGrading#screenshots)
 
 ## General info/Motivation
 
