@@ -20,7 +20,6 @@ I made the application for the recruitment
 1. Python 3.8
 2. Django 3.1.1
 3. Docker 2.4.0.0
-4. gunicorn
 
 ## Features
 
@@ -31,19 +30,18 @@ I made the application for the recruitment
 ## Quick Start Guide
 
 ```bash
-# build docker image
-docker build -t recruitment -f Dockerfile .
-# run app
-docker run -it -p 80:8080 recruitment
+docker-compose up
 ```
 
-Now you can open app in your web browser at [localhost](https://localhost)
+Now you can open app in your web browser at [localhost](https://localhost:8080)
 
 ## Configuration
 
-Write how to configure your app, examples:
-- how to configure variables (example PORT of your app), you can use env variables (READ about 12 factor apps!!!!!)
+To configure your: 
+- environment variables and ports- go to docker-compose.yml and change data in services:web
 
 ## Screenshots
 
-Add some screenshots of your app
+![](https://github.com/Damiangiza93/CandidatesGrading/blob/main/Recruitment/photos/addmark.JPG)
+![](https://github.com/Damiangiza93/CandidatesGrading/blob/main/Recruitment/photos/addcandidate.JPG)
+![](https://github.com/Damiangiza93/CandidatesGrading/blob/main/Recruitment/photos/candidateslist.JPG)
